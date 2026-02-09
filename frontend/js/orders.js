@@ -34,7 +34,7 @@ function updateCartCount() {
 function loadOrders() {
     loadingSpinner.classList.remove("hidden");
     
-    fetch(`http://localhost:8081/api/orders/user/${user.id}`)
+    fetch(API_BASE_URL + `/api/orders/user/${user.id}`)
         .then(res => {
             if (!res.ok) throw new Error("Failed to load orders");
             return res.json();
