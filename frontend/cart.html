@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - BookHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html">📚 BookHub</a>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Shop</a>
+                    <a href="cart.html" class="nav-link active cart-link">
+                        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <a href="orders.html" class="nav-link">Orders</a>
+                    <span id="navUser"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h1>🛒 Shopping Cart</h1>
+        
+        <div id="cartContent">
+            <div class="cart-empty">
+                <div class="cart-empty-icon">🛒</div>
+                <h2>Your cart is empty</h2>
+                <p>Start browsing our collection of books</p>
+                <a href="index.html" class="btn" style="display: inline-block; padding: 12px 30px; margin-top: 20px;">Continue Shopping</a>
+            </div>
+        </div>
+
+        <div id="cartSummary"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 BookHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

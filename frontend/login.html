@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BookHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html">📚 BookHub</a>
+                </div>
+                <div class="nav-links">
+                    <span style="color: white;">New user? <a href="register.html" style="color: #ffd700;">Create account</a></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form-card">
+        <h2>Welcome Back</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 25px;">Sign in to your BookHub account</p>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button class="btn" onclick="login()">Sign In</button>
+
+        <div class="form-links">
+            <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 BookHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

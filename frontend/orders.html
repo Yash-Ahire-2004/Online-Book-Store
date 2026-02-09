@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - BookHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html">📚 BookHub</a>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Shop</a>
+                    <a href="cart.html" class="nav-link cart-link">
+                        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <a href="orders.html" class="nav-link active">Orders</a>
+                    <span id="navUser"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="orders-container">
+        <h1>📋 My Orders</h1>
+        
+        <div id="loadingSpinner" class="spinner"></div>
+        <div id="orders" class="orders-list"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 BookHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>
