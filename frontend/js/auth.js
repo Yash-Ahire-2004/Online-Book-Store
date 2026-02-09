@@ -70,7 +70,7 @@ function login() {
     loginBtn.textContent = "Logging in...";
     loginBtn.disabled = true;
 
-    fetch("http://localhost:8081/api/auth/login", {
+    fetch(API_BASE_URL + "/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -140,7 +140,7 @@ function register() {
     registerBtn.textContent = "Creating account...";
     registerBtn.disabled = true;
 
-    fetch("http://localhost:8081/api/auth/register", {
+    fetch(API_BASE_URL + "/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password })

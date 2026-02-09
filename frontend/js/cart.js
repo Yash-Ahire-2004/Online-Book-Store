@@ -142,7 +142,7 @@ function placeOrder() {
     placeOrderBtn.textContent = "Processing...";
     placeOrderBtn.disabled = true;
 
-    fetch("http://localhost:8081/api/orders", {
+    fetch(API_BASE_URL + "/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

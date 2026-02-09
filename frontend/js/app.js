@@ -42,7 +42,7 @@ function updateCartCount() {
 function loadBooks() {
     loadingSpinner.classList.remove("hidden");
     
-    fetch("http://localhost:8081/api/books")
+    fetch(API_BASE_URL + "/api/books")
         .then(res => {
             if (!res.ok) throw new Error("Failed to load books");
             return res.json();
